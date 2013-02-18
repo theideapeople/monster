@@ -29,7 +29,7 @@ class MonsterServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		//include the routes that the package provides
-		include __DIR__.'/routes.php';
+		include __DIR__.'../../../routes.php';
 	}
 
 	/**
