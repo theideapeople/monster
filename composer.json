@@ -1,0 +1,23 @@
+{
+    "name": "theideapeople/monster",
+    "description": "",
+    "authors": [
+        {
+            "name": "Doug Grubba",
+            "email": "doug@theideapeople.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Theideapeople\\Monster": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
