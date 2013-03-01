@@ -7,5 +7,23 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Theideapeople\\Monster' => $baseDir . '/src/',
+    'Symfony\\Component\\Routing\\' => $vendorDir . '/symfony/routing/',
+    'Symfony\\Component\\HttpKernel\\' => $vendorDir . '/symfony/http-kernel/',
+    'Symfony\\Component\\HttpFoundation\\' => $vendorDir . '/symfony/http-foundation/',
+    'Symfony\\Component\\EventDispatcher\\' => $vendorDir . '/symfony/event-dispatcher/',
+    'Psr\\Log\\' => $vendorDir . '/psr/log/',
+    'Meido\\HTML' => $vendorDir . '/meido/html/src/',
+    'Meido\\Form' => $vendorDir . '/meido/form/src/',
     'Illuminate\\Support' => $vendorDir . '/illuminate/support/',
+    'Illuminate\\Session' => $vendorDir . '/illuminate/session/',
+    'Illuminate\\Routing' => $vendorDir . '/illuminate/routing/',
+    'Illuminate\\Redis' => $vendorDir . '/illuminate/redis/',
+    'Illuminate\\Http' => $vendorDir . '/illuminate/http/',
+    'Illuminate\\Filesystem' => $vendorDir . '/illuminate/filesystem/',
+    'Illuminate\\Events' => $vendorDir . '/illuminate/events/',
+    'Illuminate\\Encryption' => $vendorDir . '/illuminate/encryption/',
+    'Illuminate\\Database' => $vendorDir . '/illuminate/database/',
+    'Illuminate\\Cookie' => $vendorDir . '/illuminate/cookie/',
+    'Illuminate\\Container' => $vendorDir . '/illuminate/container/',
+    'Illuminate\\Cache' => $vendorDir . '/illuminate/cache/',
 );
