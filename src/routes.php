@@ -5,9 +5,9 @@
  *
  *	@return \Redirect
  */
-Route::get('login', function() {
+Route::get('login', ['as' => 'login', function() {
 	return View::make('monster::login.index');
-});
+}]);
 
 /*
  *	Attempt to login the user.
@@ -25,34 +25,34 @@ Route::post('login', function() {
  *
  *	@return \Redirect
  */
-Route::get('logout', function() {
+Route::get('logout', ['as' => 'logout', function() {
 	return Redirect::to('login');
-});
+}]);
 
 /*
  *	Show the user the register form.
  *
  *	@return \Redirect
  */
-Route::get('register', function() {
+Route::get('register', ['as' => 'register', function() {
 	return 'register';
-});
+}]);
 
 /*
  *	Give the user a form to let them retrieve info.
  *
  *	@return \Redirect
  */
-Route::get('forgot', function() {
+Route::get('login@forgot', ['as' => 'forgot', function() {
 	return 'forgot';
-});
+}]);
 
 /*
  *	Reset and send the user's password.
  *
  *	@return \Redirect
  */
-Route::post('forgot', function() {
+Route::post('login@forgot', function() {
 	return Redirect::to('login');
 });
 
@@ -61,15 +61,15 @@ Route::post('forgot', function() {
  *
  *	@return \Redirect
  */
-Route::get('reset', function() {
+Route::get('login@reset', ['as' => 'reset', function() {
 	return 'reset password';
-});
+}]);
 
 /*
  *	Try to reset the user's password.
  *
  *	@return \Redirect
  */
-Route::post('reset', function() {
+Route::post('login@reset', function() {
 	return Redirect::to('profile.password');
 });
