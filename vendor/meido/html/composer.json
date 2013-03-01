@@ -1,23 +1,23 @@
 {
-    "name": "theideapeople/monster",
-    "description": "",
+    "name": "meido/html",
+    "description": "A port of Laravel 3's HTML class",
     "authors": [
         {
-            "name": "Doug Grubba",
-            "email": "doug@theideapeople.com"
+            "name": "Joni Chandra",
+            "email": "joniliciously@gmail.com"
         }
     ],
     "require": {
         "php": ">=5.3.0",
         "illuminate/support": "4.0.x",
-        "meido/form": "1.1.*"
+        "illuminate/routing": "4.0.x"
     },
     "autoload": {
         "classmap": [
             "src/migrations"
         ],
         "psr-0": {
-            "Theideapeople\\Monster": "src/"
+            "Meido\\HTML": "src/"
         }
     },
     "minimum-stability": "dev"
