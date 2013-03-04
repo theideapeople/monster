@@ -6,5 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'CreateTableUsers' => $baseDir . '/src/migrations/2013_03_02_150838_create_table_users.php',
     'SessionHandlerInterface' => $baseDir . '/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
+    'TestCase' => $baseDir . '/../../../app/tests/TestCase.php',
 );

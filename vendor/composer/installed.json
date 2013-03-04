@@ -100,58 +100,6 @@
         "homepage": "http://symfony.com"
     },
     {
-        "name": "symfony/http-foundation",
-        "version": "2.2.x-dev",
-        "version_normalized": "2.2.9999999.9999999-dev",
-        "target-dir": "Symfony/Component/HttpFoundation",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/HttpFoundation.git",
-            "reference": "05436cd1d542f21da6ee67857cf88224e5f3acb1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/05436cd1d542f21da6ee67857cf88224e5f3acb1",
-            "reference": "05436cd1d542f21da6ee67857cf88224e5f3acb1",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "time": "2013-02-26 09:42:13",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.2-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Symfony\\Component\\HttpFoundation\\": ""
-            },
-            "classmap": [
-                "Symfony/Component/HttpFoundation/Resources/stubs"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony HttpFoundation Component",
-        "homepage": "http://symfony.com"
-    },
-    {
         "name": "symfony/event-dispatcher",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -205,77 +153,6 @@
             }
         ],
         "description": "Symfony EventDispatcher Component",
-        "homepage": "http://symfony.com"
-    },
-    {
-        "name": "symfony/http-kernel",
-        "version": "2.2.x-dev",
-        "version_normalized": "2.2.9999999.9999999-dev",
-        "target-dir": "Symfony/Component/HttpKernel",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/HttpKernel.git",
-            "reference": "72a7c5b0b5a93629f9a036909febdae21a64a235"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/72a7c5b0b5a93629f9a036909febdae21a64a235",
-            "reference": "72a7c5b0b5a93629f9a036909febdae21a64a235",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3",
-            "psr/log": ">=1.0,<2.0",
-            "symfony/event-dispatcher": ">=2.1,<3.0",
-            "symfony/http-foundation": ">=2.2,<2.3-dev"
-        },
-        "require-dev": {
-            "symfony/browser-kit": "2.2.*",
-            "symfony/class-loader": ">=2.1,<3.0",
-            "symfony/config": ">=2.0,<3.0",
-            "symfony/console": "2.2.*",
-            "symfony/dependency-injection": ">=2.0,<3.0",
-            "symfony/finder": ">=2.0,<3.0",
-            "symfony/process": ">=2.0,<3.0",
-            "symfony/routing": ">=2.2,<2.3-dev",
-            "symfony/stopwatch": ">=2.2,<2.3-dev"
-        },
-        "suggest": {
-            "symfony/browser-kit": "2.2.*",
-            "symfony/class-loader": "2.2.*",
-            "symfony/config": "2.2.*",
-            "symfony/console": "2.2.*",
-            "symfony/dependency-injection": "2.2.*",
-            "symfony/finder": "2.2.*"
-        },
-        "time": "2013-02-28 14:46:39",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.2-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Symfony\\Component\\HttpKernel\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony HttpKernel Component",
         "homepage": "http://symfony.com"
     },
     {
@@ -447,63 +324,6 @@
             }
         ],
         "description": "A simple, powerful events system."
-    },
-    {
-        "name": "illuminate/database",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "Illuminate/Database",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/illuminate/database.git",
-            "reference": "201c2379d7e113e9040ed1fcfbc73065e7fe753d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/illuminate/database/zipball/201c2379d7e113e9040ed1fcfbc73065e7fe753d",
-            "reference": "201c2379d7e113e9040ed1fcfbc73065e7fe753d",
-            "shasum": ""
-        },
-        "require": {
-            "illuminate/container": "4.0.x",
-            "illuminate/events": "4.0.x",
-            "illuminate/support": "4.0.x",
-            "php": ">=5.3.0"
-        },
-        "require-dev": {
-            "illuminate/console": "4.0.x",
-            "illuminate/filesystem": "4.0.x",
-            "illuminate/pagination": "4.0.x",
-            "illuminate/support": "4.0.x",
-            "mockery/mockery": "0.7.2"
-        },
-        "time": "2013-02-28 04:31:01",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "4.0-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Database": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "An elegant database abstraction library.",
-        "keywords": [
-            "database",
-            "laravel",
-            "orm",
-            "sql"
-        ]
     },
     {
         "name": "illuminate/cookie",
@@ -881,6 +701,186 @@
         "description": "A port of Laravel 3's Form class"
     },
     {
+        "name": "symfony/http-foundation",
+        "version": "2.2.x-dev",
+        "version_normalized": "2.2.9999999.9999999-dev",
+        "target-dir": "Symfony/Component/HttpFoundation",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/HttpFoundation.git",
+            "reference": "d154b0d9a6b5dac26413a314df1846abe197aaef"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/d154b0d9a6b5dac26413a314df1846abe197aaef",
+            "reference": "d154b0d9a6b5dac26413a314df1846abe197aaef",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2013-03-01 10:42:10",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\HttpFoundation\\": ""
+            },
+            "classmap": [
+                "Symfony/Component/HttpFoundation/Resources/stubs"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony HttpFoundation Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "symfony/http-kernel",
+        "version": "2.2.x-dev",
+        "version_normalized": "2.2.9999999.9999999-dev",
+        "target-dir": "Symfony/Component/HttpKernel",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/HttpKernel.git",
+            "reference": "0f00a19f8ed753d97ff49ffceda04e5878ad9d3d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/0f00a19f8ed753d97ff49ffceda04e5878ad9d3d",
+            "reference": "0f00a19f8ed753d97ff49ffceda04e5878ad9d3d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "psr/log": ">=1.0,<2.0",
+            "symfony/event-dispatcher": ">=2.1,<3.0",
+            "symfony/http-foundation": ">=2.2,<2.3-dev"
+        },
+        "require-dev": {
+            "symfony/browser-kit": "2.2.*",
+            "symfony/class-loader": ">=2.1,<3.0",
+            "symfony/config": ">=2.0,<3.0",
+            "symfony/console": "2.2.*",
+            "symfony/dependency-injection": ">=2.0,<3.0",
+            "symfony/finder": ">=2.0,<3.0",
+            "symfony/process": ">=2.0,<3.0",
+            "symfony/routing": ">=2.2,<2.3-dev",
+            "symfony/stopwatch": ">=2.2,<2.3-dev"
+        },
+        "suggest": {
+            "symfony/browser-kit": "2.2.*",
+            "symfony/class-loader": "2.2.*",
+            "symfony/config": "2.2.*",
+            "symfony/console": "2.2.*",
+            "symfony/dependency-injection": "2.2.*",
+            "symfony/finder": "2.2.*"
+        },
+        "time": "2013-03-01 10:42:10",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\HttpKernel\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony HttpKernel Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "illuminate/database",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Illuminate/Database",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/illuminate/database.git",
+            "reference": "572602a1107644f0db2a32d042955d7c74e01582"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/illuminate/database/zipball/572602a1107644f0db2a32d042955d7c74e01582",
+            "reference": "572602a1107644f0db2a32d042955d7c74e01582",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/container": "4.0.x",
+            "illuminate/events": "4.0.x",
+            "illuminate/support": "4.0.x",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "illuminate/console": "4.0.x",
+            "illuminate/filesystem": "4.0.x",
+            "illuminate/pagination": "4.0.x",
+            "illuminate/support": "4.0.x",
+            "mockery/mockery": "0.7.2"
+        },
+        "time": "2013-03-01 02:48:45",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.0-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Database": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "An elegant database abstraction library.",
+        "keywords": [
+            "database",
+            "laravel",
+            "orm",
+            "sql"
+        ]
+    },
+    {
         "name": "illuminate/support",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -888,12 +888,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/illuminate/support.git",
-            "reference": "f8da477e065537ffc25036a72a03db565ed5a4dd"
+            "reference": "7c35ef7d7fd90355f0e4e406a70258ad75e9ff0d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/illuminate/support/zipball/f8da477e065537ffc25036a72a03db565ed5a4dd",
-            "reference": "f8da477e065537ffc25036a72a03db565ed5a4dd",
+            "url": "https://api.github.com/repos/illuminate/support/zipball/7c35ef7d7fd90355f0e4e406a70258ad75e9ff0d",
+            "reference": "7c35ef7d7fd90355f0e4e406a70258ad75e9ff0d",
             "shasum": ""
         },
         "require": {
@@ -903,7 +903,7 @@
             "mockery/mockery": "0.7.2",
             "patchwork/utf8": "1.0.*"
         },
-        "time": "2013-02-28 03:03:56",
+        "time": "2013-03-01 02:03:02",
         "type": "library",
         "extra": {
             "branch-alias": {

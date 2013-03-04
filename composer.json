@@ -14,7 +14,8 @@
     },
     "autoload": {
         "classmap": [
-            "src/migrations"
+            "src/migrations",
+            "../../../app/tests/TestCase.php"
         ],
         "psr-0": {
             "Theideapeople\\Monster": "src/"
