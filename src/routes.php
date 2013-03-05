@@ -56,7 +56,7 @@ Route::post('login', function() {
  *	@return \Redirect
  */
 Route::get('logout', ['as' => 'logout', function() {
-	return Redirect::to('login');
+	return Redirect::to(Config::get('monster::general.loggInFormEndPoint'));
 }]);
 
 /*
@@ -74,7 +74,7 @@ Route::get('register', ['as' => 'register', function() {
  *	@return \Redirect
  */
 Route::get('login@forgot', ['as' => 'forgot', function() {
-	return 'forgot';
+	return View::make('monster::login.forgot');
 }]);
 
 /*
@@ -92,7 +92,7 @@ Route::post('login@forgot', function() {
  *	@return \Redirect
  */
 Route::get('login@reset', ['as' => 'reset', function() {
-	return 'reset password';
+	return View::make('monster::login.reset');
 }]);
 
 /*
