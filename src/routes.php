@@ -15,9 +15,37 @@ Route::get('login', ['as' => 'login', function() {
  *	@return \Redirect
  */
 Route::post('login', function() {
-	//@todo try to login the user
 
-	return Redirect::to('home');
+	//Get the login form variables
+	$email		= Input::get('email', null);
+	$password	= Input::get('password', null);
+
+	//Send them back if the email is null
+	if($email === null || $email == '') {
+		return Redirect::back()
+			->with('messages', ['danger' => 'An email is required.']);
+	}
+
+	//If the password is blank, send them back
+	if($password === null || $password == '') {
+		return Redirect::back()
+			->with('messages', ['danger' => 'A password is required.']);
+	}
+
+	//validate the email address with native php
+	if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+		//encourage them to use a real email
+		$email = filter_var($email, FILTER_SANITIZE_EMAIL);
+
+		//send them back to the login form
+		return Redirect::back()
+			->with('email', $email)
+			->with('messages', ['danger' => 'Please provide a valid email address.']);
+	}
+
+	//they are logged in, send them "home"
+	return Redirect::to(Config::get('monster::general.loggedInEndPoint'));
 });
 
 /*
