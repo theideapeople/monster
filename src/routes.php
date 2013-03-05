@@ -32,6 +32,8 @@ Route::post('login', function() {
 			->with('messages', ['danger' => 'A password is required.']);
 	}
 
+	//@TODO check if remember me is check and set if it is
+
 	//validate the email address with native php
 	if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
@@ -81,7 +83,7 @@ Route::get('login@forgot', ['as' => 'forgot', function() {
  *	@return \Redirect
  */
 Route::post('login@forgot', function() {
-	return Redirect::to('login');
+	return Redirect::to(Config::get('monster::general.loggInFormEndPoint'));
 });
 
 /*
@@ -100,4 +102,16 @@ Route::get('login@reset', ['as' => 'reset', function() {
  */
 Route::post('login@reset', function() {
 	return Redirect::to('profile.password');
+});
+
+/*
+ *	Handle the callback from the social links.
+ *
+ *	@return \Redirect
+ */
+Route::get('social', function() {
+
+	// @todo handle the callback from the social
+
+	return Redirect::to(Config::get('monster::general.loggedInEndPoint'));
 });

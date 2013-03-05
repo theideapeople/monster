@@ -10,4 +10,8 @@
 
 	<!--not sure what the csrf token call is, laravel 4 isn't fully documented -->
 
+	<!-- @TODO put in the remember me -->
+
+	<!-- @TODO set the social links -->
+
 <?= Form::close() ?>

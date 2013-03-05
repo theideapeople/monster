@@ -1,6 +1,9 @@
 <?php
 	return [
 
+		//Where people go to login
+		'loggInFormEndPoint' => 'login',
+
 		//Where people go when they are logged in
 		'loggedInEndPoint' => 'home',
 
